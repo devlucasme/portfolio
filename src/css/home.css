@@ -17,14 +17,18 @@
 
 .home .img-home .img-box {
     max-width: 450px;
+    height: 450px;
     margin: auto;
     border-radius: 50%;
+    z-index: 1;
 }
 
 .home .img-home .img-box img {
-    border-radius: 50%;
+    border-radius: 50% ;
     width: 100%;
+    height: 100%;
     border: 20px solid transparent;
+    object-fit: cover;
 }
 
 .home .text-home p {
