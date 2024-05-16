@@ -5,19 +5,19 @@
 .header .logo {
     font-family: var(--fonte-secundaria);
     font-size: var(--fonte-extra-grande);
-    border: 2px solid var(--cor-branca);
-    border-radius: 50%;
-    width: 65px;
-    height: 65px;
-    line-height: 59px;
-    text-align: center;
-    text-decoration: underline;
-    transition: 0.3s;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s;
+    
 }
 
 .header a:hover .logo {
+    transform: scale(1.1);
+}
+
+.header .logo span {
     color: var(--cor-primaria);
-    border: 2px solid var(--cor-primaria);
+    text-shadow: 0 0 25px var(--cor-primaria);
 }
 
 .header nav ul {
@@ -27,19 +27,18 @@
 .header nav li a {
     text-transform: capitalize;
     color: var(--cor-branca);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
     padding: 10px 20px;
     transition: 0.3s;
-    border-radius: 50px;
     letter-spacing: 1px;
     user-select: none;
-    color: var(--cor-branca);
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .header nav ul li a:hover {
-    background-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+    text-decoration: underline;
 }
 
 .header .menu {
@@ -113,7 +112,7 @@
 }
 
 @media(max-width: 900px) {
-    
+
     .header .menu {
         display: block;
     }

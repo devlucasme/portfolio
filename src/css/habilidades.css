@@ -27,10 +27,9 @@
 .habilidades .container-habilidades .habilidade p {
     font-size: 1.8rem;
     font-family: var(--fonte-secundaria);
+    text-transform: capitalize;
 }
 
 .habilidades .container-habilidades .habilidade i {
     font-size: 8rem;
 }
-
-
