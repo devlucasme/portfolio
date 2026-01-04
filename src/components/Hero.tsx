@@ -20,11 +20,11 @@ export const Hero: FC = () => {
   return (
     <main className="relative flex flex-col items-center justify-center h-screen px-4 text-center">
       <div className="max-w-2xl">
-        <p className="text-gray-400 text-sm font-[Inter] tracking-wide mb-2">
+        <p className="text-gray-400 text-sm md:text-lg font-[Inter] tracking-wide mb-2">
           Olá, meu nome é
         </p>
 
-        <h1 className="text-4xl text-emerald-400 md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
+        <h1 className="text-4xl text-emerald-400 md:text-6xl lg:text-7xl font-bold font-[Inter] tracking-tight mb-4">
           Lucas Gabriel
         </h1>
 
@@ -35,7 +35,7 @@ export const Hero: FC = () => {
           </p>
         </div>
 
-        <p className="max-w-lg mx-auto text-gray-400 text-center text-balance leading-relaxed">
+        <p className="max-w-lg mx-auto text-gray-400 text-center text-balance leading-relaxed md:text-xl">
           Formado em Técnico em Informática pelo IFPE Campus Garanhuns, desenvolvo aplicações frontend com React.js e backend com Express.js, sempre buscando aprender e criar soluções eficientes.
         </p>
         ;
@@ -55,12 +55,9 @@ export const Hero: FC = () => {
           >
             <FaGithub size={20} />
           </a>
-
-
         </div>
       </div>
-
-      <IoIosArrowDown className="mt-16 absolute bottom-10 text-gray-400 text-3xl animate-bounce mx-auto block" />
+      <IoIosArrowDown className="mt-16 absolute bottom-10 text-gray-400 text-2xl md:text-3xl animate-bounce mx-auto block" />
     </main>
   )
 }

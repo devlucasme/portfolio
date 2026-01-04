@@ -38,7 +38,7 @@ export const ProjectCard: FC<IProjectCardProps> = ({
             <div className="p-5 flex flex-col justify-between flex-1">
                 <div>
                     <div className="flex justify-between items-start mb-3">
-                        <h3 className="text-emerald-400 font-semibold text-lg">{title}</h3>
+                        <h3 className="text-emerald-400 font-semibold text-lg md:text-xl">{title}</h3>
                         {githubUrl && (
                             <a
                                 href={githubUrl}
@@ -52,7 +52,7 @@ export const ProjectCard: FC<IProjectCardProps> = ({
 
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{description}</p>
 
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    <div className="flex flex-wrap gap-3 mb-6">
                         {technologies.map((tech, index) => (
                             <span
                                 key={index}
@@ -64,7 +64,7 @@ export const ProjectCard: FC<IProjectCardProps> = ({
                     </div>
                 </div>
 
-                {liveUrl && (
+                {liveUrl && liveUrl !== "#" && (
                     <div className="flex justify-center mt-auto">
                         <a
                             href={liveUrl}

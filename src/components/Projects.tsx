@@ -1,13 +1,13 @@
 import type { FC } from "react";
 import VitalizeImage from "@/assets/tela-inicial.png";
-import PortfolioImage from "@/assets/portfolio.png";
+import PortfolioImage from "@/assets/hero-portfolio.png";
 import { ProjectCard } from "./ProjectCard";
 
 const projects = [
     {
         title: "Vitalize",
         description: "Projeto de finalização de curso. Sistema Web para nutrição e educação física.",
-        technologies: ["Typescript", "React", "Styled Components", "Node.js", "Express", "PostgreSQL", "Prisma ORM", "Docker"],
+        technologies: ["Typescript", "React", "Styled Components", "Node.js", "Express", "PostgreSQL", "Prisma", "Docker"],
         imageUrl: VitalizeImage,
         githubUrl: "https://github.com/devlucasme/vitalize-PPO-2025",
         liveUrl: "#"
