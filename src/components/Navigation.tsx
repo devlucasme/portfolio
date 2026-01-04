@@ -6,8 +6,9 @@ export const Navigation: FC = () => {
             <nav className="flex justify-between mx-auto max-w-7xl px-6 py-3">
                 <a href="#" className="text-emerald-400 font-semibold font-[Inter] text-lg">&lt;dev /&gt;</a>
                 <ul className="flex gap-5">
-                    <li><a href="#projects" className="text-gray-400 text-sm hover:text-gray-200 transition-colors">Projetos</a></li>
                     <li><a href="#technologies" className="text-gray-400 text-sm hover:text-gray-200 transition-colors">Tecnologias</a></li>
+                    <li><a href="#projects" className="text-gray-400 text-sm hover:text-gray-200 transition-colors">Projetos</a></li>
+                    <li><a href="#contact" className="text-gray-400 text-sm hover:text-gray-200 transition-colors">Contato</a></li>
                 </ul>
             </nav>
         </header>

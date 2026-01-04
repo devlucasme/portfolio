@@ -2,7 +2,7 @@ import type { FC } from "react";
 import { useTypewriter } from "@/hooks/useTypewriter";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { CiMail } from "react-icons/ci";
+import { IoIosArrowDown } from "react-icons/io";
 
 export const Hero: FC = () => {
 
@@ -18,11 +18,13 @@ export const Hero: FC = () => {
   });
 
   return (
-    <main className="flex items-center justify-center h-screen py-24 pt-32">
-      <div className="mx-auto max-w-2xl px-4 text-center">
-        <p className="text-gray-400 text-sm font-[Inter] tracking-wide mb-2">Olá, meu nome é</p>
+    <main className="relative flex flex-col items-center justify-center h-screen px-4 text-center">
+      <div className="max-w-2xl">
+        <p className="text-gray-400 text-sm font-[Inter] tracking-wide mb-2">
+          Olá, meu nome é
+        </p>
 
-        <h1 className="text-4xl text-emerald-400 md:text-6xl lg:7xl font-bold tracking-tight mb-4">
+        <h1 className="text-4xl text-emerald-400 md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
           Lucas Gabriel
         </h1>
 
@@ -33,30 +35,32 @@ export const Hero: FC = () => {
           </p>
         </div>
 
-        <p className="max-w-lg mx-auto text-gray-400 leading-relaxed ">
-          Apaixonado por tecnologia, formei-me em Técnico em Informática pelo IFPE Campus Garanhuns.
-          Gosto de transformar ideias em soluções reais e sigo constantemente aprendendo mais sobre desenvolvimento de software e novas tecnologias.
+        <p className="max-w-lg mx-auto text-gray-400 text-center text-balance leading-relaxed">
+          Formado em Técnico em Informática pelo IFPE Campus Garanhuns, desenvolvo aplicações frontend com React.js e backend com Express.js, sempre buscando aprender e criar soluções eficientes.
         </p>
-
-
-
+        ;
         <div className="flex justify-center gap-4 mt-6">
-
-          <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-400  text-gray-400 transition-all duration-300 hover:bg-emerald-400/10 hover:text-emerald-400 hover:scale-110 hover:border-emerald-400">
+          <a
+            href="https://www.linkedin.com/in/lucas-gabriel-da-silva-8b4088314/"
+            target="_blank"
+            className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 text-gray-400 transition-all duration-300 hover:bg-emerald-400/10 hover:text-emerald-400 hover:scale-110 hover:border-emerald-400"
+          >
             <FaLinkedin size={20} />
           </a>
 
-          <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-400  text-gray-400 transition-all duration-300 hover:bg-emerald-400/10 hover:text-emerald-400 hover:scale-110 hover:border-emerald-400">
+          <a
+            href="https://github.com/devlucasme/"
+            target="_blank"
+            className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 text-gray-400 transition-all duration-300 hover:bg-emerald-400/10 hover:text-emerald-400 hover:scale-110 hover:border-emerald-400"
+          >
             <FaGithub size={20} />
           </a>
 
-          <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-400  text-gray-400 transition-all duration-300 hover:bg-emerald-400/10 hover:text-emerald-400 hover:scale-110 hover:border-emerald-400">
-            <CiMail size={24} />
-          </a>
+
         </div>
-
-
       </div>
+
+      <IoIosArrowDown className="mt-16 absolute bottom-10 text-gray-400 text-3xl animate-bounce mx-auto block" />
     </main>
   )
 }
