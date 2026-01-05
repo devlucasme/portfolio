@@ -6,7 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 const projects = [
     {
         title: "Vitalize",
-        description: "Projeto de finalização de curso. Sistema Web para nutrição e educação física.",
+        description: "Sistema web voltado para nutrição e educação física, desenvolvido como projeto de conclusão de curso.",
         technologies: ["Typescript", "React", "Styled Components", "Node.js", "Express", "PostgreSQL", "Prisma", "Docker"],
         imageUrl: VitalizeImage,
         githubUrl: "https://github.com/devlucasme/vitalize-PPO-2025",
@@ -14,7 +14,7 @@ const projects = [
     },
     {
         title: "Portfólio Pessoal",
-        description: "Portfólio minimalista desenvolvido com React, TypeScript e Tailwindcss.",
+        description: "Portfólio minimalista desenvolvido com React, TypeScript e Tailwind CSS.",
         technologies: ["Typescript", "React", "Tailwindcss"],
         imageUrl: PortfolioImage,
         githubUrl: "https://github.com/devlucasme/portfolio",

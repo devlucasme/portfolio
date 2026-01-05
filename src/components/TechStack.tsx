@@ -50,7 +50,7 @@ export const TechStack: FC = () => {
                         return (
                             <div
                                 key={index}
-                                className="flex flex-col items-center gap-2 p-4 rounded-lg bg-gray-400/20 border border-gray-400/20 transition-all duration-300 hover:border-emerald-400 hover:translate-y-1"
+                                className="flex flex-col h-24 md:w-36 items-center gap-2 p-4 rounded-lg bg-gray-400/20 border border-gray-400/20 transition-all duration-300 hover:border-emerald-400 hover:translate-y-1"
                             >
                                 <IconComponent
                                     className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-300 group-hover:scale-110"
