@@ -20,9 +20,9 @@ export const ProjectCard: FC<IProjectCardProps> = ({
     liveUrl
 }) => {
     return (
-        <div className="bg-[hsl(240_10%_10%)] border border-gray-700 rounded-lg overflow-hidden transition-all duration-300 hover:border-emerald-400 hover:translate-y-1 hover:shadow-lg flex flex-col">
+        <div className="bg-[hsl(240_10%_10%)] border border-gray-700 rounded-lg overflow-hidden transition-all duration-300 hover:border-emerald-400 hover:translate-y-1 hover:shadow-lg flex flex-col h-120">
             {imageUrl ? (
-                <div className="w-full h-60 overflow-hidden">
+                <div className="w-full h-55 md:h-65 overflow-hidden">
                     <img
                         src={imageUrl}
                         alt={title}

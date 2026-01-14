@@ -20,11 +20,18 @@ export const Hero: FC = () => {
   return (
     <main className="relative flex flex-col items-center justify-center h-screen px-4 text-center">
       <div className="max-w-2xl">
-        <p className="text-gray-400 text-sm md:text-lg font-[Inter] tracking-wide mb-2">
-          Olá, meu nome é
-        </p>
+        <div className="flex justify-center mb-4">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-linear-to-r from-primary via-emerald-400 to-primary rounded-full blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-500 animate-pulse" />
+            <div className="relative w-40 h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 rounded-full bg-linear-to-br from-primary to-emerald-400 p-1.5">
+              <div className="w-full h-full rounded-full bg-card overflow-hidden flex items-center justify-center">
+                <img src="src/assets/minha-imagem.png" alt="minha imagem" />
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h1 className="text-4xl text-emerald-400 md:text-6xl lg:text-7xl font-bold font-[Inter] tracking-tight mb-4">
+        <h1 className="text-3xl text-emerald-400 md:text-6xl lg:text-7xl font-bold font-[Inter] tracking-tight mb-4">
           Lucas Gabriel
         </h1>
 

@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import VitalizeImage from "@/assets/tela-inicial.png";
-import PortfolioImage from "@/assets/hero-portfolio.png";
+import SpeedGuideImage from "@/assets/speedguide-imagem.png";
 import { ProjectCard } from "./ProjectCard";
 
 const projects = [
@@ -13,13 +13,13 @@ const projects = [
         liveUrl: "#"
     },
     {
-        title: "Portfólio Pessoal",
-        description: "Portfólio minimalista desenvolvido com React, TypeScript e Tailwind CSS.",
-        technologies: ["Typescript", "React", "Tailwindcss"],
-        imageUrl: PortfolioImage,
-        githubUrl: "https://github.com/devlucasme/portfolio",
-        liveUrl: "#"
-    },
+        title: "SpeedGuide",
+        description: "SpeedGuide é um simulador de planos de internet que calcula recomendações com base no uso do usuário e permite integração via WhatsApp.",
+        technologies: ["Typescript", "React", "Tailwindcss", "Shadcn Ui"],
+        imageUrl: SpeedGuideImage,
+        githubUrl: "https://github.com/devlucasme/speedguide",
+        liveUrl: "https://speedguide-kwbf4tap5-lucas-gabriel-da-silvas-projects-305d671e.vercel.app/"
+    }
 ];
 
 export const Projects: FC = () => {
