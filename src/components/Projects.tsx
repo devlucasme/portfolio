@@ -18,7 +18,7 @@ const projects = [
         technologies: ["Typescript", "React", "Tailwindcss", "Shadcn Ui"],
         imageUrl: SpeedGuideImage,
         githubUrl: "https://github.com/devlucasme/speedguide",
-        liveUrl: "https://speedguide-kwbf4tap5-lucas-gabriel-da-silvas-projects-305d671e.vercel.app/"
+        liveUrl: "https://speedguide.vercel.app"
     }
 ];
 

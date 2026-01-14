@@ -3,6 +3,7 @@ import { useTypewriter } from "@/hooks/useTypewriter";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
+import MinhaImagem from "@/assets/minha-imagem.png";
 
 export const Hero: FC = () => {
 
@@ -25,7 +26,7 @@ export const Hero: FC = () => {
             <div className="absolute -inset-1 bg-linear-to-r from-primary via-emerald-400 to-primary rounded-full blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-500 animate-pulse" />
             <div className="relative w-40 h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 rounded-full bg-linear-to-br from-primary to-emerald-400 p-1.5">
               <div className="w-full h-full rounded-full bg-card overflow-hidden flex items-center justify-center">
-                <img src="src/assets/minha-imagem.png" alt="minha imagem" />
+                <img src={MinhaImagem} alt="minha imagem" />
               </div>
             </div>
           </div>
