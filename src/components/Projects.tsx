@@ -7,7 +7,7 @@ const projects = [
     {
         title: "Vitalize",
         description: "Sistema web voltado para nutrição e educação física, desenvolvido como projeto de conclusão de curso.",
-        technologies: ["Typescript", "React", "Styled Components", "Node.js", "Express", "PostgreSQL", "Prisma", "Docker"],
+        technologies: ["Typescript", "React", "Styled Components", "Node.js", "Express", "PostgreSQL", "Prisma", "Docker", "OpenAI", "Engenharia de Prompt"],
         imageUrl: VitalizeImage,
         githubUrl: "https://github.com/devlucasme/vitalize-PPO-2025",
         liveUrl: "#"
