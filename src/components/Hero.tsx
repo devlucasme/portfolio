@@ -6,16 +6,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import MinhaImagem from "@/assets/minha-imagem.png";
 
 export const Hero: FC = () => {
-
   const displayText = useTypewriter({
     text: [
-      "Técnico em Informática",
       "Desenvolvedor Frontend",
-      "Desenvolvedor Backend"
+      "Desenvolvedor Backend",
     ],
     typingSpeed: 100,
     deletingSpeed: 50,
-    pauseTime: 2000
+    pauseTime: 2000,
   });
 
   return (
@@ -31,20 +29,20 @@ export const Hero: FC = () => {
             </div>
           </div>
         </div>
-
         <h1 className="text-3xl text-emerald-400 md:text-6xl lg:text-7xl font-bold font-[Inter] tracking-tight mb-4">
           Lucas Gabriel
         </h1>
-
         <div className="min-h-8 md:h-16 flex items-center justify-center my-3">
           <p className="text-xl md:text-2xl lg:text-3xl font-[Inter] text-gray-400">
             {displayText}
             <span className="text-emerald-400 animate-blink">|</span>
           </p>
         </div>
-
         <p className="max-w-lg mx-auto text-gray-400 text-center text-balance leading-relaxed md:text-xl">
-          Formado em Técnico em Informática pelo IFPE Campus Garanhuns, desenvolvo aplicações frontend com React.js e backend com Express.js, sempre buscando aprender e criar soluções eficientes.
+          Formado em Técnico em Informática pelo IFPE Campus Garanhuns,
+          desenvolvo aplicações utilizando React.js com Vite no frontend e
+          Express.js no backend, sempre buscando aprender e criar soluções eficientes, enquanto
+          aprofundo meus conhecimentos em Next.js e Fastify.
         </p>
         ;
         <div className="flex justify-center gap-4 mt-6">
@@ -67,5 +65,5 @@ export const Hero: FC = () => {
       </div>
       <IoIosArrowDown className="mt-16 absolute bottom-10 text-gray-400 text-2xl md:text-3xl animate-bounce mx-auto block" />
     </main>
-  )
-}
+  );
+};

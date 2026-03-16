@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { BiColor } from "react-icons/bi";
 import {
     SiHtml5,
     SiCss3,
@@ -14,17 +15,23 @@ import {
     SiTailwindcss,
     SiGithub,
     SiGit,
-    SiShadcnui
+    SiShadcnui,
+    SiFastify,
+    SiVite,
+    SiNextdotjs
 } from 'react-icons/si';
 
 const technologies = [
     { name: 'HTML', icon: SiHtml5, color: '#E34F26' },
     { name: 'CSS', icon: SiCss3, color: '#1572B6' },
     { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
-    { name: 'React', icon: SiReact, color: '#61DAFB' },
+    { name: 'React.js', icon: SiReact, color: '#61DAFB' },
+    { name: 'Vite', icon: SiVite, BiColor, color: '#646CFF' },
     { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
+    { name: 'Next.js', icon: SiNextdotjs, color: '#FFFFFF' },
     { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
     { name: 'Express', icon: SiExpress, color: '#FFFFFF' },
+    { name: 'Fastify', icon: SiFastify, color: '#FFFFFF' },
     { name: 'Prisma', icon: SiPrisma, color: '#46546d' },
     { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
     { name: 'Docker', icon: SiDocker, color: '#2496ED' },
@@ -32,7 +39,7 @@ const technologies = [
     { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
     { name: 'GitHub', icon: SiGithub, color: '#FFFFFF' },
     { name: 'Git', icon: SiGit, color: '#F05032' },
-    { name: 'Shadcn Ui', icon: SiShadcnui, color: '#FFFFFF' }
+    { name: 'Shadcn UI', icon: SiShadcnui, color: '#FFFFFF' }
 ];
 
 export const TechStack: FC = () => {
