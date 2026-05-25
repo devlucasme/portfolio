@@ -1,7 +1,12 @@
-import { AppRoutes } from "./routes/AppRoutes";
+import { Home } from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export const App = () => {
   return (
-    <AppRoutes />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
