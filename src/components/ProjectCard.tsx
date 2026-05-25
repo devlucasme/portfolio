@@ -30,8 +30,8 @@ export const ProjectCard: FC<IProjectCardProps> = ({
                     />
                 </div>
             ) : (
-                <div className="w-full h-40 bg-[hsl(240_10%_10%)] flex items-center justify-center">
-                    <span className="text-emerald-400 font-[Inter] text-sm">{'<preview />'}</span>
+                <div className="w-full h-65 bg-[hsl(240_10%_10%)] flex items-center justify-center">
+                    <span className="text-emerald-400 font-[Inter] text-sm">{'<Em desenvolvimento... />'}</span>
                 </div>
             )}
 
