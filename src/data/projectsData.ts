@@ -35,7 +35,6 @@ export const projectsData = [
       "Prisma",
       "Docker",
       "Vitest",
-      "supertest",
     ],
     liveUrl: "#",
   },
