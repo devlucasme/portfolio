@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface UseTypewriterProps {
   text: string[];
@@ -11,7 +11,7 @@ export const useTypewriter = ({
   text,
   typingSpeed = 100,
   deletingSpeed = 50,
-  pauseTime = 2000
+  pauseTime = 2000,
 }: UseTypewriterProps) => {
   const [displayText, setDisplayText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
@@ -20,22 +20,25 @@ export const useTypewriter = ({
   useEffect(() => {
     const currentText = text[textIndex];
 
-    const timeout = setTimeout(() => {
-      if (!isDeleting) {
-        if (displayText.length < currentText.length) {
-          setDisplayText(currentText.slice(0, displayText.length + 1));
+    const timeout = setTimeout(
+      () => {
+        if (!isDeleting) {
+          if (displayText.length < currentText.length) {
+            setDisplayText(currentText.slice(0, displayText.length + 1));
+          } else {
+            setTimeout(() => setIsDeleting(true), pauseTime);
+          }
         } else {
-          setTimeout(() => setIsDeleting(true), pauseTime);
+          if (displayText.length > 0) {
+            setDisplayText(currentText.slice(0, displayText.length - 1));
+          } else {
+            setIsDeleting(false);
+            setTextIndex((prev) => (prev + 1) % text.length);
+          }
         }
-      } else {
-        if (displayText.length > 0) {
-          setDisplayText(currentText.slice(0, displayText.length - 1));
-        } else {
-          setIsDeleting(false);
-          setTextIndex((prev) => (prev + 1) % text.length);
-        }
-      }
-    }, isDeleting ? deletingSpeed : typingSpeed);
+      },
+      isDeleting ? deletingSpeed : typingSpeed,
+    );
 
     return () => clearTimeout(timeout);
   }, [displayText, isDeleting, textIndex, text, typingSpeed, deletingSpeed, pauseTime]);

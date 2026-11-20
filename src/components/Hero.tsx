@@ -1,12 +1,10 @@
 import type { FC } from "react";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import MinhaImagem from "@/assets/minha-imagem.png";
 import { displayText } from "@/utils/displayText";
 
 export const Hero: FC = () => {
-
   const textAnimated = displayText();
 
   return (
@@ -32,7 +30,10 @@ export const Hero: FC = () => {
           </p>
         </div>
         <p className="max-w-lg mx-auto text-gray-400 text-center text-balance leading-relaxed text-sm min-[410px]:text-base md:text-xl">
-          Formado em Técnico em Informática pelo IFPE – Campus Garanhuns, desenvolvo aplicações web modernas utilizando React.js no frontend e Express.js no backend, com foco em soluções eficientes, organizadas e centradas na experiência do usuário. Atualmente, também venho expandindo meus conhecimentos em desenvolvimento mobile e engenharia de software.
+          Formado em Técnico em Informática pelo IFPE – Campus Garanhuns, desenvolvo aplicações web
+          modernas utilizando React.js no frontend e Fastify no backend, com foco em soluções
+          eficientes, organizadas e centradas na experiência do usuário. Atualmente, também venho
+          expandindo meus conhecimentos em arquitetura de software e visão de produto.
         </p>
         ;
         <div className="flex justify-center gap-4 min-[410px]:mt-6">
@@ -40,6 +41,7 @@ export const Hero: FC = () => {
             href="https://www.linkedin.com/in/lucas-gabriel-da-silva-8b4088314/"
             target="_blank"
             className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 text-gray-400 transition-all duration-300 hover:bg-emerald-400/10 hover:text-emerald-400 hover:scale-110 hover:border-emerald-400"
+            rel="noopener"
           >
             <FaLinkedin size={20} />
           </a>
@@ -48,6 +50,7 @@ export const Hero: FC = () => {
             href="https://github.com/devlucasme/"
             target="_blank"
             className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 text-gray-400 transition-all duration-300 hover:bg-emerald-400/10 hover:text-emerald-400 hover:scale-110 hover:border-emerald-400"
+            rel="noopener"
           >
             <FaGithub size={20} />
           </a>

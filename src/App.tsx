@@ -1,5 +1,5 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export const App = () => {
   return (
@@ -8,5 +8,5 @@ export const App = () => {
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
